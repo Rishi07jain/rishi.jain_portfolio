@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-jetbrains: 'JetBrains Mono', monospace;
+  --font-display: 'Playfair Display', serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+  background-color: #1e1e1e;
+  color: #cccccc;
+  font-family: var(--font-jetbrains), monospace;
+}
+
+/* Display heading font */
+.font-display {
+  font-family: var(--font-display), serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #424242;
+  border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555555;
+}
+
+/* Selection */
+::selection {
+  background-color: #264f78;
+}
+
+/* Progress bar animation */
+@keyframes progressFill {
+  from { width: 0%; }
+}
+
+.animate-progress {
+  animation: progressFill 1s ease-out forwards;
+}
+
+/* Card hover glow */
+.card-glow {
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.card-glow:hover {
+  box-shadow: 0 0 20px rgba(0, 122, 204, 0.15);
+  border-color: rgba(0, 122, 204, 0.4);
+}
+
+/* Timeline line */
+.timeline-line {
+  position: relative;
+}
+.timeline-line::before {
+  content: '';
+  position: absolute;
+  left: 7px;
+  top: 24px;
+  bottom: 0;
+  width: 2px;
+  background: #3e3e42;
+}
+
+/* Tech tag */
+.tech-tag {
+  display: inline-block;
+  padding: 2px 10px;
+  border: 1px solid #3e3e42;
+  border-radius: 4px;
+  font-size: 11px;
+  font-family: var(--font-jetbrains), monospace;
+  color: #9cdcfe;
+  background: rgba(0, 122, 204, 0.08);
+  transition: all 0.15s ease;
+}
+.tech-tag:hover {
+  border-color: #007acc;
+  background: rgba(0, 122, 204, 0.15);
+}
