@@ -21,71 +21,128 @@ interface Project {
   status: string;
   statusColor: string;
   url: string;
-  date: string;
 }
 
 const sections: { id: string; label: string; color: string; projects: Project[] }[] = [
   {
     id: "fullstack",
-    label: "Fullstack Development",
+    label: "Fullstack / GenAI",
     color: "text-blue-400",
     projects: [
       {
-        emoji: "🛡️",
-        category: "BACKEND · DISTRIBUTED · REAL-TIME",
-        name: "Real-Time Fraud Detection System",
+        emoji: "🧭",
+        category: "FULLSTACK · AI CAREER TOOL",
+        name: "Curate",
         description:
-          "Built a real-time distributed transaction processing system using Kafka and microservices architecture. Implemented rule-based risk scoring and alerting with WebSocket-driven dashboards for instant fraud monitoring.",
-        tech: ["Spring Boot", "Kafka", "PostgreSQL", "WebSockets", "JWT"],
+          "An AI career tool that turns job descriptions into tailored project ideas, resume bullets, and LaTeX. It also synthesizes real Reddit and Glassdoor reviews to surface company culture and interview insights.",
+        tech: ["React", "Node.js", "Express", "LangGraph", "Gemini"],
         status: "Live",
         statusColor: "text-vscode-green",
-        url: "https://github.com/Rishi07jain",
-        date: "March 2026",
+        url: "https://curate-jet.vercel.app/",
       },
       {
-        emoji: "🤖",
-        category: "AI · FULL-STACK · FINANCE",
-        name: "Fisc.com – AI Tax Management",
+        emoji: "📚",
+        category: "GENAI · RAG · DOCUMENTS",
+        name: "DocReader",
         description:
-          "Built an AI-powered platform that helps users understand and optimize their taxes by analyzing real investment data. Created a conversational chatbot to simplify complex financial queries.",
-        tech: ["React", "Node.js", "MongoDB", "OpenAI API"],
+          "A RAG-powered document assistant that answers questions strictly from uploaded files using Gemini embeddings and ChromaDB for grounded context retrieval.",
+        tech: ["Python", "Streamlit", "Gemini API", "ChromaDB"],
         status: "Live",
         statusColor: "text-vscode-green",
-        url: "https://github.com/Rishi07jain",
-        date: "May 2025",
+        url: "https://docreader-app-rishi.streamlit.app/",
+      },
+      {
+        emoji: "📄",
+        category: "FULLSTACK · DOCUMENTS",
+        name: "DocNest",
+        description:
+          "A secure personal and family document vault for organizing IDs, medical records, legal files, and financial documents. Share family files seamlessly while keeping private documents protected with browser-based access control.",
+        tech: ["React", "Express" , "MongoDB" , "Axios" , "Multer"],
+        status: "GitHub",
+        statusColor: "text-vscode-textDim",
+        url: "https://github.com/Rishi07jain/DocNest",
+      },
+      {
+        emoji: "🎟️",
+        category: "FULLSTACK · EVENT MANAGEMENT",
+        name: "Eventora",
+        description:
+          "A secure event management and ticketing platform with role-based access, OTP verification, smart overbooking prevention, and real-time admin analytics.",
+        tech: ["React", "Express" , "MongoDB" , "JWT", "Nodemailer"],
+        status: "GitHub",
+        statusColor: "text-vscode-textDim",
+        url: "https://github.com/Rishi07jain/Eventora",
       },
     ],
   },
   {
     id: "data-analytics",
     label: "Data Analytics",
-    color: "text-purple-400",
-    projects: [],
-  },
-  {
-    id: "ai-ml",
-    label: "AI / ML",
-    color: "text-teal-400",
+    color: "text-cyan-400",
     projects: [
       {
-        emoji: "💳",
-        category: "ML · RECOMMENDATION · FINTECH",
-        name: "CardWise – Credit Card Recommendation",
+        emoji: "🛒",
+        category: "ANALYTICS · E-COMMERCE",
+        name: "Amazon Sales Analysis",
         description:
-          "Built a recommendation engine using cosine similarity to match users with optimal credit cards based on spending behavior. Integrated real-time alerts and reward optimization features.",
-        tech: ["Flask", "TypeScript", "Scikit-learn", "Python"],
+          "An interactive dashboard analyzing 1.3M Amazon electronics transactions to uncover revenue trends, customer behavior, product performance, and brand dynamics.",
+        tech: ["TypeScript", "Recharts", "PapaParse", "React Query"],
+        status: "Live",
+        statusColor: "text-vscode-green",
+        url: "https://amazon-sales-analysis-gold.vercel.app/",
+      },
+      {
+        emoji: "📊",
+        category: "ANALYTICS · FINANCE",
+        name: "Godrej Portfolio Analysis",
+        description:
+          "Analyzed a synthetic dataset of 1,800 loans, segmenting the portfolio by region, customer segment, and loan type to derive business insights.",
+        tech: ["Excel", "Python"],
         status: "GitHub",
         statusColor: "text-vscode-textDim",
-        url: "https://github.com/Rishi07jain",
-        date: "June 2025",
+        url: "https://github.com/Rishi07jain/Godrej_portfolio_analysis",
+      },
+      {
+        emoji: "🦠",
+        category: "ANALYTICS · PUBLIC HEALTH",
+        name: "COVID-19 Analytics Dashboard",
+        description:
+          "A real-time dashboard analyzing global COVID-19 cases, deaths, recoveries, and geographic trends across countries and continents using public health data.",
+        tech: [ "Next.js", "Recharts", "World Bank Data"],
+        status: "GitHub",
+        statusColor: "text-vscode-textDim",
+        url: "https://github.com/Rishi07jain/covid19-analytics-dashboard",
       },
     ],
   },
   {
-    id: "automation",
-    label: "Automation Workflows (n8n)",
-    color: "text-orange-400",
-    projects: [],
+    id: "ai-automations",
+    label: "AI Automations",
+    color: "text-teal-400",
+    projects: [
+      {
+        emoji: "📨",
+        category: "AUTOMATION · INVOICING",
+        name: "Invoice Workflow",
+        description:
+          "An n8n workflow project for automating invoice-related tasks and reducing repetitive manual processing.",
+        tech: ["n8n", "Workflow Automation"],
+        status: "GitHub",
+        statusColor: "text-vscode-textDim",
+        url: "https://github.com/Rishi07jain/Invoice_n8n",
+      },
+      {
+        emoji: "▶️",
+        category: "AUTOMATION · CONTENT",
+        name: "YouTrend",
+        description:
+          "An n8n workflow project for automating a YouTube trend-focused content process.",
+        tech: ["n8n", "Workflow Automation", "YouTube"],
+        status: "GitHub",
+        statusColor: "text-vscode-textDim",
+        url: "https://github.com/Rishi07jain/YouTrend_n8n",
+      },
+    ],
   },
 ];
 

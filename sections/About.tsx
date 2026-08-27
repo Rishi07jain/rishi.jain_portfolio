@@ -13,7 +13,7 @@ const item = {
 };
 
 const focusItems = [
-  { emoji: "⚙", text: "Building pipelines & dashboards at JioSaavn — making data actually useful" },
+  { emoji: "⚙", text: "Building pipelines & dashboards — making data actually useful" },
   { emoji: "📐", text: "Digging into the math behind business decisions, because numbers don't lie" },
   { emoji: "🤖", text: "Reverse-engineering how LLMs think, one rabbit hole at a time" },
   { emoji: "✦", text: "Always learning, always shipping — that part never stops" },
@@ -75,10 +75,8 @@ export default function About() {
             And then there&apos;s{" "}
             <span className="text-vscode-type font-semibold">AI</span>. I don&apos;t just want to
             use it — I want to understand how its brain works. How LLMs reason, where they break,
-            why they hallucinate. My goal, somewhat seriously, is to one day be the world&apos;s
-            most unskilled successful person. Currently doing that at{" "}
-            <span className="text-vscode-accent font-semibold">JioSaavn</span> as a Data Analytics
-            Intern.
+            and why they hallucinate. My goal, somewhat seriously, is to one day be the world&apos;s
+            most unskilled successful person.
           </p>
         </div>
       </motion.div>

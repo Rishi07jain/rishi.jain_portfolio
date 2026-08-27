@@ -19,7 +19,7 @@ const experience = [
     company: "JioSaavn",
     companyColor: "text-vscode-accent",
     description:
-      "Building scalable data pipelines using Trino/Presto to process high-volume streaming datasets. Working on migration of legacy KDM reporting from Google Sheets to Apache Superset by building 4 production-grade dashboards. Reduced data discrepancies by 0.7%.",
+      "Built scalable data pipelines using Trino/Presto engines to process high-volume streaming datasets. Worked on migration of legacy KDM reporting from Google Sheets to Apache Superset by building 4 production-grade dashboards. Created a Growth Model Dashboard to fastrack MAU numbers across different subscription packs for revenue forecasting to help the Strategy and Optimisation stakeholder.",
     tech: ["Trino/Presto", "Apache Superset", "Python", "SQL", "Data Pipelines"],
   },
   {
