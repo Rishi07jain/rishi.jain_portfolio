@@ -17,7 +17,7 @@ export default function TitleBar() {
 
       {/* Menu items */}
       <div className="flex items-center gap-3 text-[11px] text-vscode-textMuted font-mono">
-        <button className="hover:text-vscode-text transition-colors">File</button>
+        <button className="hover:text-vscode-text transition-colors">Fil</button>
         <button className="hover:text-vscode-text transition-colors">Edit</button>
         <button className="hover:text-vscode-text transition-colors">View</button>
         <button className="hover:text-vscode-text transition-colors">Go</button>
