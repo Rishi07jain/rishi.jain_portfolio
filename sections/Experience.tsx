@@ -23,6 +23,22 @@ const experience = [
     tech: ["Trino/Presto", "Apache Superset", "Python", "SQL", "Data Pipelines"],
   },
   {
+  period: "Jul 2025 – Dec 2025",
+  role: "Co-Founder",
+  company: "ARAIS",
+  companyColor: "text-vscode-accent",
+  description:
+    "Co-founded an AI automation consultancy building agentic workflows and business automation solutions for SMEs. Acquired 3 clinics as clients and deployed appointment-booking systems to replace traditional call-based reception workflows. Built invoice automation pipelines that processed typed and handwritten invoices uploaded to Google Drive, automatically extracted and structured their details into Excel, and routed them to relevant stakeholders. Also developed YouTrend, a content automation workflow designed to help creators scale faceless short-form content for distribution before transitioning to long-form and personal-brand content.",
+  tech: [
+    "n8n",
+    "OpenAI API",
+    "Gemini API",
+    "Agentic AI",
+    "AI Automation",
+    "Workflow Automation",
+  ],
+},
+  {
     period: "Aug 2025 – May 2026",
     role: "Frontend & UI/UX Mentor",
     company: "DJS Unicode",
